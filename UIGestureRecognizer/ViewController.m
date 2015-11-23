@@ -9,27 +9,23 @@
 #import "ViewController.h"
 
 @interface ViewController () <UIGestureRecognizerDelegate>
-- (void) handlePinchWithGestureRecognizer: (UIPinchGestureRecognizer *) pinchGestureRecognizer;
-- (void) handleRotationWithGestureRecognizer: (UIRotationGestureRecognizer *) rotationGestureRecognizer;
+
 @end
 
 @implementation ViewController 
-{
-    UIRotationGestureRecognizer* rotationGestureRecognizer;
-    UIPinchGestureRecognizer* pinchGestureRecognizer;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.ballImageView.multipleTouchEnabled = YES;
     self.ballImageView.userInteractionEnabled = YES;
     
 
-    rotationGestureRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotationWithGestureRecognizer:)];
+    UIRotationGestureRecognizer *rotationGestureRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotationWithGestureRecognizer:)];
     rotationGestureRecognizer.delegate = self;
     [self.ballImageView addGestureRecognizer:rotationGestureRecognizer];
     
 
-    pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchWithGestureRecognizer:)];
+    UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchWithGestureRecognizer:)];
     pinchGestureRecognizer.delegate = self;
     [self.ballImageView addGestureRecognizer:pinchGestureRecognizer];
     //[pinchGestureRecognizer requireGestureRecognizerToFail:rotationGestureRecognizer];   //Rotation duoc uu tien
