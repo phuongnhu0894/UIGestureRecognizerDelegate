@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UIGestureRecognizerDelegate.xcscheme</key>
+		<key>UIGestureRecognizer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3F7CF1FC1C0312CE003C0E45</key>
+		<key>3F7CF1D71C02F27E003C0E45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

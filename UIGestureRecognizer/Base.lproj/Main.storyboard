@@ -15,11 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="zgf-I0-Ihz">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Bh-ac-LPJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="yPf-Vq-X0n"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zgf-I0-Ihz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MIK-Ui-qZU"/>
+                            <constraint firstItem="zgf-I0-Ihz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdt-8X-eJ2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ballImageView" destination="zgf-I0-Ihz" id="I7I-80-6Jl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball.png" width="128" height="128"/>
+    </resources>
 </document>

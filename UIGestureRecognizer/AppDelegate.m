@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  UIGestureRecognizerDelegate
+//  UIGestureRecognizer
 //
 //  Created by student on 11/23/15.
 //  Copyright © 2015 Techmaster. All rights reserved.
