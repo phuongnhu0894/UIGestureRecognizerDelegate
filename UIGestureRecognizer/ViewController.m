@@ -65,13 +65,13 @@
 //        return NO;
 //    }                   //Pinch duoc uu tien
 //}
-- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    if ([gestureRecognizer isMemberOfClass: [UIRotationGestureRecognizer class]] && [otherGestureRecognizer isMemberOfClass:[UIPinchGestureRecognizer class]]) {
-        return YES;
-    } else {
-        return NO;
-    } // Rotation duoc nhan dang truoc
-}
+//- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//    if ([gestureRecognizer isMemberOfClass: [UIRotationGestureRecognizer class]] && [otherGestureRecognizer isMemberOfClass:[UIPinchGestureRecognizer class]]) {
+//        return YES;
+//    } else {
+//        return NO;
+//    } // Rotation duoc nhan dang truoc
+//}
 
 //- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
 //    if ([gestureRecognizer isMemberOfClass: [UIRotationGestureRecognizer class]] && [otherGestureRecognizer isMemberOfClass:[UIPinchGestureRecognizer class]]) {
